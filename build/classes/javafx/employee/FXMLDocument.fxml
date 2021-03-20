@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.employee.FXMLDocumentController">
+   <children>
+      <VBox layoutX="14.0" layoutY="78.0" prefHeight="250.0" prefWidth="250.0" spacing="30.0">
+         <children>
+            <Button fx:id="ADD" mnemonicParsing="false" onAction="#addEmployeeAction" text="Add Employee" textFill="#3106bf">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow color="#190abf" height="50.65" radius="24.825" width="50.65" />
+               </effect>
+            </Button>
+            <Button fx:id="SI" mnemonicParsing="false" onAction="#SalaryInfoAction" text="Salary Info" textFill="#d13d0a">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" color="#e8560d" height="50.65" radius="24.825" width="50.65" />
+               </effect>
+            </Button>
+            <Button fx:id="IS" mnemonicParsing="false" onAction="#IncreaseSalaryAction" text="Increse Salary" textFill="#079707">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" color="#0ab916" height="50.65" radius="24.825" width="50.65" />
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+      </VBox>
+      <Label layoutX="168.0" layoutY="31.0" text="Employee Record" textFill="#eeea0a">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#d10f1f" height="15.07" radius="7.035" width="15.07" />
+         </effect>
+      </Label>
+      <VBox layoutX="273.0" layoutY="102.0" prefHeight="250.0" prefWidth="273.0" spacing="30.0">
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+         <children>
+            <Button fx:id="DA" mnemonicParsing="false" onAction="#DAAction" prefHeight="45.0" prefWidth="165.0" text="Display All Info" textFill="#9106bf">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" color="#760dbc" height="53.62" radius="26.2475" width="53.37" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="DS" mnemonicParsing="false" onAction="#DSAction" prefHeight="45.0" prefWidth="169.0" text="Display Specific Info" textFill="#b50b38">
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" color="#c90b3b" height="50.65" radius="24.825" width="50.65" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="223.0" layoutY="419.0" mnemonicParsing="false" onAction="#ExitAction" text="EXIT" textFill="#e10b0b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#cd0707" />
+         </effect>
+      </Button>
+      <Label layoutX="224.0" layoutY="66.0" text="System" textFill="#eeea0a">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#d10f1f" height="15.07" radius="7.035" width="15.07" />
+         </effect>
+      </Label>
+   </children>
+   <effect>
+      <InnerShadow choke="0.28" color="#078ca1" height="77.09" radius="37.305" width="74.13" />
+   </effect>
+</AnchorPane>
